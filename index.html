@@ -3,17 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mera Pehla Website</title>
+    <title>Imteyaj - My Portfolio</title>
     <style>
         body {
-            text-align: center; font-family: arial; background: lightyellow;
+            background: #111; color: white; text-align: center; font-family: arial; padding-top: 40px;
         }
-        h1 {color: blue;}
+
+        img {
+            width: 200px; height: 200px; object-fit: cover; border-radius: 50%; border: 4px solid #00ffcc;
+        }
+        h1 {font-size: 45px; color: #00ffcc;}
+        p {font-size: 20px; color: #ccc;}
+        button {background: #00ffcc; border: none; padding: 15px 30px; font-size: 18px; border-radius: 30px; cursor: pointer;}
+        a {color: white; text-decoration: none; display: block; margin-top: 30px; font-size: 20px;}
+        .box {border: 2px solid #00ffcc; width: 80%; margin: auto; padding: 30px;border-radius: 20px;}
+        .heart {font-size: 70px; cursor: pointer; animation: dhadkan 1s infinite;}
+        @keyframes dhadkan {
+            0% {transform: scale(1);}
+            50% {transform: scale(1.3);}
+            100% {transform: scale(1);}
+            
+        }
+     
     </style>
 </head>
 <body>
-    <h1>Hello, I am imteyaj</h1>
-    <p>ye mera pehla Github Project hai</p>
-    <button onclick="alert('Shabash imteyaj!')">Click karo</button>
+    <div class="box">
+        <a href="myphoto.jpg"><img src="myphoto.jpg" ></a>
+        <h1>Hello, I am imteyaj </h1>
+        <p>I am from Bihar . I am learning to make Website</p>
+
+        <div class="heart" onclick="alert('Dil se thanks!&#10084; Welcome to my second Website')">&#10084;</div>
+        <p>Heart par Click Karo!</p>
+
+        <button onclick="alert('Thanks for visiting!')">Message Me</button>
+        <a href="https://instagram.com/__imteyaj.__.shaikh__18">&#128248; My Instagram - Click Here</a>
+
+    </div>
+    
 </body>
 </html>
